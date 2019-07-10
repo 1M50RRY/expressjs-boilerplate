@@ -1,0 +1,32 @@
+{
+  "name": "expressjs-boilerplate",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "SET DEBUG=api-server:* & nodemon ./bin/www",
+    "start_prod": "node ./bin/www",
+    "test": "jest --detectOpenHandles"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcrypt": "^3.0.6",
+    "cookie-parser": "^1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-jwt": "^5.3.1",
+    "express-session": "^1.16.2",
+    "http-errors": "~1.6.3",
+    "jest": "^24.8.0",
+    "jsdoc": "^3.6.2",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.1",
+    "nodemon": "^1.19.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.11.0",
+    "pug": "2.0.0-beta11",
+    "sequelize": "^5.9.4",
+    "sequelize-cli": "^5.5.0"
+  }
+}
