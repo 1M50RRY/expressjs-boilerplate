@@ -3,5 +3,6 @@ Express.js boilerplate with JWT, ORM and tests
 
 ## Getting started
 - npm i
-- Create model User with fields: id, email, password, avatar
+- sequelize init --force
+- npx sequelize-cli model:generate --name User --attributes email:string, password:string, type:string, balance:float, avatar:string
 - Change tests in tests/functions/db.test.js
