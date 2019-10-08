@@ -1,3 +1,7 @@
+/**
+ * @module controllers/users
+*/
+
 var { User } = require('../models');
 var bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
@@ -8,7 +12,6 @@ const { secret } = require('../middleware/passport');
 /**
  * Registers an user
  * @async
- * @module controllers/users
  * @param {file}   avatar - Avatar.
  * @param {string} email - Email
  * @param {string} password - Password
@@ -34,7 +37,6 @@ exports.register = async (req, res, next) => {
 
 /**
  * Authenticates an user
- * @module controllers/users
  * @param {string} email - Email
  * @param {string} password - Password
  * @returns {json}
@@ -56,7 +58,6 @@ exports.login = (req, res, next) => {
 
 /**
  * Gets user by id
- * @module controllers/users
  * @param {integer} id - Id
  * @returns {json}
 */
